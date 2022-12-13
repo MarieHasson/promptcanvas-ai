@@ -6,7 +6,9 @@ const nextConfig = {
   experimental: {
     appDir: true,
     transpilePackages: ["ui"],
-    // runtime: "experimental-edge",
+    fontLoaders: [
+      { loader: "@next/font/google", options: { subsets: ["latin"] } },
+    ],
   },
   images: {
     remotePatterns: [
@@ -15,7 +17,6 @@ const nextConfig = {
         hostname: "promptcanvas-ai.vercel.app",
       },
     ],
-    //formats: ["image/avif", "image/webp"],
   },
 };
 
