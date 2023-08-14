@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { useParams, useRouter } from "next/navigation"
 import { BILLBOARD_LABELS } from "@/constants/billboard"
+import { apiRoutes, routes } from "@/constants/routes"
 import { zodResolver } from "@hookform/resolvers/zod"
 import axios from "axios"
 import { useForm } from "react-hook-form"
@@ -62,15 +63,18 @@ export const BillboardForm: React.FC<BillboardFormProps> = ({
 
       if (initialData) {
         await axios.patch(
-          `/api/spaces/${params.spaceId}/billboards/${params.billboardId}`,
+          `${apiRoutes.spaces}/${params.spaceId}/billboards/${params.billboardId}`,
           data
         )
       } else {
-        await axios.post(`/api/spaces/${params.spaceId}/billboards`, data)
+        await axios.post(
+          `${apiRoutes.spaces}/${params.spaceId}/billboards`,
+          data
+        )
       }
 
       router.refresh()
-      router.push(`/dashboard/${params.spaceId}/billboards`)
+      router.push(`${routes.dashboard}/${params.spaceId}/billboards`)
 
       toast({ title: initialData ? labels.toastMessage : labels.toastMessage })
     } catch (error) {
@@ -89,11 +93,11 @@ export const BillboardForm: React.FC<BillboardFormProps> = ({
       setLoading(true)
 
       await axios.delete(
-        `/api/spaces/${params.spaceId}/billboards/${params.billboardId}`
+        `${apiRoutes.spaces}/${params.spaceId}/billboards/${params.billboardId}`
       )
 
       router.refresh()
-      router.push(`/dashboard/${params.spaceId}/billboards`)
+      router.push(`${routes.dashboard}/${params.spaceId}/billboards`)
 
       toast({ title: BILLBOARD_LABELS.delete.toastMessage })
     } catch (error) {

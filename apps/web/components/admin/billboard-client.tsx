@@ -1,10 +1,14 @@
 "use client"
 
 import { useParams, useRouter } from "next/navigation"
+import { routes } from "@/constants/routes"
 
 import { Button, DataTable, Heading, Separator } from "@shared/ui"
 import { ApiList } from "@/components/admin/api-list"
-import { columns, type BillboardColumn } from "@/components/admin/columns"
+import {
+  columns,
+  type BillboardColumn,
+} from "@/components/admin/billboard-columns"
 import { Icons } from "@/components/icons"
 
 interface BillboardClientProps {
@@ -25,7 +29,7 @@ export const BillboardClient: React.FC<BillboardClientProps> = ({ data }) => {
 
         <Button
           onClick={() =>
-            router.push(`/dashboard/${params.spaceId}/billboards/new`)
+            router.push(`${routes.dashboard}/${params.spaceId}/billboards/new`)
           }
         >
           <Icons.add className="mr-2 h-4 w-4" />
