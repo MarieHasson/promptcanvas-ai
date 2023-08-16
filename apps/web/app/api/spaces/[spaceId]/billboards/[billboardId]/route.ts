@@ -34,7 +34,7 @@ export async function GET(req: Request, { params }: GetProps) {
 
     return NextResponse.json(billboard)
   } catch (error) {
-    console.log("[BILLBOARDS_DELETE]", error)
+    console.log("[BILLBOARDS_GET]", error)
     return new NextResponse("Internal error", { status: 500 })
   }
 }
