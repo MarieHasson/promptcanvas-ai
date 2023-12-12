@@ -10,6 +10,7 @@ export const siteConfig: SiteConfig = {
   links: {
     twitter: "https://github.com/MarieHasson/promptcanvas-ai",
     github: "https://github.com/MarieHasson/promptcanvas-ai",
+    api_github: "https://api.github.com/repos/MarieHasson/promptcanvas-ai",
     terms: "/terms",
     privacy: "/privacy",
   },
