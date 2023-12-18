@@ -5,9 +5,9 @@ import Image from "next/image"
 import { useRouter } from "next/navigation"
 
 import { type ItemModel } from "@/lib/database/models/Item"
-import usePreviewModal from "@/hooks/use-preview-modal"
 import IconButton from "@/components/explore/icon-button"
 import { Icons } from "@/components/icons"
+import { usePreviewModal } from "@/features/explore/hooks/use-preview-modal"
 
 interface ExploreCardProps {
   data: ItemModel
