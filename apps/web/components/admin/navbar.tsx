@@ -1,7 +1,7 @@
 import { redirect } from "next/navigation"
-import { routes } from "@/constants/routes"
 import { auth, UserButton } from "@clerk/nextjs"
 
+import { routes } from "@/constants/routes"
 import { findAllSpacesByUserId } from "@/lib/database/space"
 import { parseData } from "@/lib/utils"
 import MainNav from "@/components/admin/main-nav"
