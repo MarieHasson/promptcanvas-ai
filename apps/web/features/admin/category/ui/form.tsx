@@ -9,10 +9,10 @@ import { useForm } from "react-hook-form"
 import { CATEGORY_LABELS } from "@/constants/category"
 import { apiRoutes, routes } from "@/constants/routes"
 import { toastError } from "@/lib/api-response/api-responses"
-import { type BillboardModel } from "@/lib/database/models/Billboard"
 import { type CategoryModel } from "@/lib/database/models/Category"
 import { toast } from "@shared/ui"
 
+import { type BillboardColumn } from "../../billboard/ui/columns"
 import { FormContainer } from "../../common/ui/form/form-container"
 import { InputField } from "../../common/ui/form/input-field"
 import { SelectField } from "../../common/ui/form/select-field"
@@ -24,7 +24,7 @@ import {
 
 type Props = {
   initialData: CategoryModel | null
-  billboards: BillboardModel[]
+  billboards: BillboardColumn[]
 }
 
 export const CategoryForm = ({ initialData, billboards }: Props) => {
