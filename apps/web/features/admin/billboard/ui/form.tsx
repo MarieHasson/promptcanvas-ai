@@ -12,10 +12,10 @@ import { toastError } from "@/lib/api-response/api-responses"
 import { type BillboardModel } from "@/lib/database/models/Billboard"
 import { billboardSchema } from "@/lib/validation/billboard"
 import { toast } from "@shared/ui"
+import { FormContainer } from "@/features/admin/common/ui/form/form-container"
+import { ImageField } from "@/features/admin/common/ui/form/image-field"
+import { InputField } from "@/features/admin/common/ui/form/input-field"
 
-import { FormContainer } from "../../common/ui/form/form-container"
-import { ImageField } from "../../common/ui/form/image-field"
-import { InputField } from "../../common/ui/form/input-field"
 import { defaultData, type BillboardFormData } from "../schemas/billboard"
 
 type Props = {

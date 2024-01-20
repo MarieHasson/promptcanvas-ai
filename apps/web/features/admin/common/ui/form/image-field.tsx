@@ -14,7 +14,6 @@ type Props = {
   labels: {
     name: string
     label: string
-    placeholder?: string
   }
   loading?: boolean
   control: Control<any>
