@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-labelledby="title">
+  <title id="title">PromptCanvas</title>
+  <defs>
+    <linearGradient id="canvas" x1="8" y1="40" x2="40" y2="8" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22d3ee" />
+      <stop offset="0.52" stop-color="#6366f1" />
+      <stop offset="1" stop-color="#a855f7" />
+    </linearGradient>
+  </defs>
+  <rect x="6" y="10" width="26" height="26" rx="7" fill="url(#canvas)" opacity="0.92" />
+  <rect x="16" y="6" width="26" height="26" rx="7" fill="none" stroke="#e0e7ff" stroke-width="3" />
+  <path d="m32.5 28 1.8 4.2 4.2 1.8-4.2 1.8-1.8 4.2-1.8-4.2-4.2-1.8 4.2-1.8 1.8-4.2Z" fill="#ffffff" />
+</svg>
