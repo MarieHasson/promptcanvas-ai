@@ -38,7 +38,7 @@ export const ProjectsList = () => {
 						<Link href={`/projects/${project.id}`}>
 							<div className="flex items-center gap-x-4">
 								<Image
-									alt="Vibe"
+									alt="PromptCanvas"
 									className="object-contain"
 									height={32}
 									src="/logo.svg"

@@ -47,7 +47,7 @@ export const MessageLoading = () => {
 		<div className="group flex flex-col px-2 pb-4">
 			<div className="mb-2 flex items-center gap-2 pl-2">
 				<Image
-					alt="Vibe"
+					alt="PromptCanvas"
 					className="shrink-0"
 					height={18}
 					src="/logo.svg"

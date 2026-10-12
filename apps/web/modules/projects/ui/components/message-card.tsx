@@ -83,7 +83,7 @@ const AssistantMessage = ({
 		>
 			<div className="mb-2 flex items-center gap-2 pl-2">
 				<Image
-					alt="Vibe"
+					alt="PromptCanvas"
 					className="shrink-0"
 					height={18}
 					src="/logo.svg"

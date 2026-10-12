@@ -13,7 +13,7 @@ export default function Page() {
 			<section className="space-y-6 pt-[16vh] 2xl:pt-48">
 				<div className="flex flex-col items-center">
 					<Image
-						alt="Vibe"
+						alt="PromptCanvas"
 						className="hidden md:block"
 						height={50}
 						src="/logo.svg"

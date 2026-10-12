@@ -31,7 +31,7 @@ export const SiteHeader = () => (
 				href={DATA.href}
 				rel="noopener noreferrer"
 			>
-				<Image alt="Vibe" height={24} src="/logo.svg" width={24} />
+				<Image alt="PromptCanvas" height={24} src="/logo.svg" width={24} />
 				<h1
 					className="bg-clip-text font-bold text-lg text-slate-200 tracking-tighter"
 					id="site-title"

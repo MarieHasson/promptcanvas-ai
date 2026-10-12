@@ -1,6 +1,6 @@
 # Architecture Decision Records (ADRs)
 
-This directory contains Architecture Decision Records for the promptcanvas-ai project. ADRs capture important architectural and technical decisions, providing context and reasoning for future reference.
+This directory contains Architecture Decision Records for the PromptCanvas AI project. ADRs capture important architectural and technical decisions, providing context and reasoning for future reference.
 
 ## ADR List
 

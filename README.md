@@ -1,10 +1,10 @@
-# Next.js 15 - AI Turborepo Starter
+# PromptCanvas AI
 
-> **A production-ready monorepo showcasing modern web development with Next.js 15, React 19, and a thoughtfully-architected feature module system.**
+> **An AI-powered app and website builder built as a production-ready Next.js monorepo.**
 
-## 🌐 Live Demo
+## 🎯 Overview
 
-**[promptcanvas-ai.vercel.app](http://localhost:3000)**
+PromptCanvas AI turns natural-language prompts into runnable web experiences in isolated sandboxes. The repository includes the web application, shared design system, Storybook workspace, background jobs, authentication, persistence, and usage controls.
 
 ---
 
@@ -358,5 +358,3 @@ Built with amazing open source tools:
 - [ ] Add performance monitoring (Sentry)
 - [ ] Add CI/CD workflows
 - [ ] Internationalization (i18n)
-
-**Built with ❤️ by [promptcanvas](https://github.com/MarieHasson/promptcanvas-ai)**

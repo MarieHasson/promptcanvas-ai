@@ -11,10 +11,6 @@ const nextConfig: NextConfig = {
 		remotePatterns: [
 			{
 				protocol: "https",
-				hostname: "promptcanvas-ai.vercel.app",
-			},
-			{
-				protocol: "https",
 				hostname: "avatars.githubusercontent.com",
 			},
 			{

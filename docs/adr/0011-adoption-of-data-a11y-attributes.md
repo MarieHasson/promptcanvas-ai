@@ -2,7 +2,7 @@
 
 - Status: Accepted
 - Date: 2025-08-29
-- Authors: PromptCanvas
+- Owners: Project maintainers
 - Supersedes: None
 - Related: 0003 (Biome Linting & Formatting), 0007 (Error Handling Strategy), 0009 (Performance Monitoring), 0010 (API Design Standards)
 

@@ -7,10 +7,8 @@ import { absoluteUrl } from "@/lib/utils";
 const siteName = siteConfig.name;
 const siteDescription = siteConfig.description;
 const siteUrl = siteConfig.url;
-const siteAuthor = siteConfig.author; // Prefer @handle form for Twitter
 const siteGithubLink = siteConfig.links.github;
 const siteOgImage = siteConfig.ogImage || absoluteUrl("/og.jpg");
-const siteTwitter = siteConfig.links.twitter;
 
 /**
  * Base (global) metadata applied to all routes.
@@ -41,12 +39,12 @@ export const baseMetadata: Metadata = {
 	],
 	authors: [
 		{
-			name: siteAuthor,
+			name: "PromptCanvas contributors",
 			url: siteGithubLink,
 		},
 	],
-	creator: siteAuthor,
-	publisher: siteAuthor,
+	creator: "PromptCanvas contributors",
+	publisher: "PromptCanvas contributors",
 	alternates: {
 		canonical: "/",
 	},
@@ -60,8 +58,8 @@ export const baseMetadata: Metadata = {
 		images: [
 			{
 				url: siteOgImage,
-				width: 1200,
-				height: 630,
+				width: 1672,
+				height: 941,
 				alt: siteName,
 			},
 		],
@@ -70,22 +68,18 @@ export const baseMetadata: Metadata = {
 		card: "summary_large_image",
 		title: siteName,
 		description: siteDescription,
-		creator: siteAuthor,
-		site: siteTwitter
-			? `@${siteTwitter.split("twitter.com/").pop()}`
-			: undefined,
 		images: [
 			{
 				url: siteOgImage,
-				width: 1200,
-				height: 630,
+				width: 1672,
+				height: 941,
 			},
 		],
 	},
 	icons: {
-		icon: "/favicon/favicon.ico",
-		shortcut: "/favicon/favicon.ico",
-		apple: "/favicon/apple-touch-icon.png",
+		icon: "/logo.svg",
+		shortcut: "/logo.svg",
+		apple: "/logo.svg",
 	},
 	appleWebApp: {
 		title: siteName,

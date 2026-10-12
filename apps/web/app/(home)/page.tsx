@@ -9,7 +9,7 @@ export default function Page() {
 		<div className="mx-auto flex w-full max-w-5xl flex-col">
 			<section className="space-y-6 pt-[10vh] pb-[6vh] md:pt-[16vh] md:pb-[10vh] 2xl:py-48">
 				<div className="flex flex-col items-center">
-					<Image alt="Vibe" height={50} src="/logo.svg" width={50} />
+					<Image alt="PromptCanvas" height={50} src="/logo.svg" width={50} />
 				</div>
 				<h1 className="text-center font-bold text-2xl md:text-5xl">
 					Build something amazing with PromptCanvas AI

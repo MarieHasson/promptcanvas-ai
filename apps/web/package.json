@@ -3,10 +3,6 @@
 	"version": "0.1.0",
 	"type": "module",
 	"private": true,
-	"author": {
-		"name": "promptcanvas",
-		"url": "https://github.com/MarieHasson/promptcanvas-ai"
-	},
 	"scripts": {
 		"dev": "next dev --turbopack",
 		"dev:all": "concurrently \"pnpm dev:webhook\" \"pnpm dev\"",
